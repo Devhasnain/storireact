@@ -1,0 +1,121 @@
+.form_answer_section {
+    // height: 100vh;
+    background-color: $white;
+    .form_answer_section_wrap {
+        max-width: 1600px;
+        margin: 0 auto;
+        padding: 80px;
+        ul.tabs {
+            margin: 0px;
+			padding: 0px;
+			list-style: none;
+            display: flex;
+            li {
+                background: #fff;
+                // background: #ededed;
+                color: #222;
+                display: inline-block;
+                padding: 16px;
+                cursor: pointer;
+                width: 50%;
+                font-size: 16px;
+                font-weight: 600;
+                border: 1px solid #ededed;
+                text-align:center;
+                text-transform: uppercase;
+                &.current{
+                    // background:$white;
+                    background: #DB0A07;
+                    color: #fff;
+                }
+            }
+        }
+        .tab-content {
+            display: none;
+            &.current{
+                display: block;
+                background-color: $white;
+            }
+            table {
+                color: #222;
+                width: 100%;
+                text-align: left;
+                font-size: 14px;
+                border-collapse: collapse;
+                border: 1px solid #ededed;
+                border-top-color: transparent;
+                th {
+                    padding: 24px;
+                    // &:last-child {
+                    //     width: 50%;
+                    // }
+                }
+                tbody {
+                    tr {
+                        &:nth-of-type(odd) {
+                            background-color: rgba(0,0,0,.05);
+                        }
+                        td {
+                            padding: 24px;
+                            // &:last-child {
+                            //     width: 60%;
+                            // }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .form_answer_section {
+        .form_answer_section_wrap {
+            .tab-content {
+                table {
+                    width: 100%;
+                    display: block;
+                    overflow: hidden;
+                    thead {
+                        display: none;
+                    }
+                    tbody 
+                    {
+                        display: block;
+                        width: 100%;
+                        tr {
+                            margin-bottom: 40px;
+                            display: block;
+                            width: 100%;
+                            td {
+                                padding: 10px 24px;
+                                display: block;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:991px) {
+    .form_answer_section {
+        .form_answer_section_wrap {
+            padding: 80px 0;
+        }
+    }
+}
+
+@media only screen and (max-width:680px) {
+    .form_answer_section {
+        .form_answer_section_wrap {
+            ul.tabs {
+                li {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

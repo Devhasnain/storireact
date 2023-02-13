@@ -1,0 +1,206 @@
+/*
+    Component: Buttons
+-------------------------
+*/
+
+
+/* Button CSS starts */
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+	outline: none;
+	outline-offset: 0;
+}
+
+
+
+.btn-outline {
+	font-weight: 600;
+	border-radius: 0px;
+	padding: 12px 25px;
+	text-transform: uppercase;
+    color: #d8e2e8 !important;
+    border: 2px solid #BFC6CB;
+    background-color: rgba(0,0,0,0.52);
+	transition: all 0.3s cubic-bezier(0.12,0.75,0.4,1);
+	-webkit-transition: all 0.3s cubic-bezier(0.12,0.75,0.4,1);
+	&:hover {
+		outline: none;
+		color: #fff;
+		background-color:rgba(27, 164, 216, 0.42);
+		box-shadow:0 10px 50px rgba(0,0,0,0.08), 0 13px 45px rgba(0,0,0,0.08);
+	}
+}
+
+// .btn-primary {
+// 	font-weight: 600;
+// 	border-radius: 0px;
+// 	padding: 10px 20px;
+// 	text-transform: uppercase;
+// 	color: #fff;
+// 	background-color: $blue;
+// 	border: 2px solid $blue;
+// 	&:hover {
+// 		opacity: 0.8;
+// 	}
+// 	&:active {
+// 		opacity: 0.8;
+// 	}
+// 	&:focus {
+// 		box-shadow: none !important;
+// 		opacity: 0.8;
+// 	}
+// }
+.btn.btn-border {
+	// @include rounded(36px);
+	color: $blue;
+	border:1px solid $grey; 
+	background-color: transparent;
+	&:hover , &:active , &.active,
+	&.focus, &:focus  {
+		@include opacity(0.8);
+		color: $white;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		border-color: $blue;
+		background-color:$blue;
+	}
+}
+.btn , a.btn {
+	// @include rounded(36px);
+	background-color: $blue;
+	border: 0;
+	font-size: 12px;
+	font-weight: 600;
+	padding: 10px 16px;
+	text-transform: uppercase;
+	color: $white;
+	cursor: pointer;
+	display: inline-block;
+	overflow: hidden;
+	text-align: center;
+	text-transform: uppercase;
+	outline: none;    
+	min-width: 140px;
+	.fa, .far, .fal, .fas, .fab {
+		padding-right: 10px;
+	}
+	&:hover , &:active , &.active,
+	&.focus, &:focus  {
+			@include opacity(0.8);
+			color: $white;
+			-webkit-box-shadow: none;
+			box-shadow: none;
+	}
+	//Button color variations 
+	&.rouded-jumbo-btn {
+		width: 80px;
+		height: 80px;
+		text-align: center;
+		@include rounded(100% !important);
+		text-transform: uppercase;
+		font-size: 18px;
+		font-weight: 700;
+		min-width: auto;
+		line-height: 64px;
+		&:hover , &.hover {
+			// background-color: $blue;
+			background-color: #DB0A07;
+			color: $white; 
+		}
+		&:focus {
+			background-color: $grey;
+			color: $white; 
+		}
+	}
+	&.btn-default {
+			background-color: $grey;
+			color: $white; 
+			// @include rounded(36px);
+			&:hover , &.hover {
+				@include opacity(0.8);
+				color: $white; 
+			}
+			&:focus {
+				background-color: $grey;
+				color: $white; 
+			}
+			&.btn-flat {
+				background-color: $grey;
+			}
+	}
+	&.btn-primary {
+		background-color: $blue;
+		color: $white; 
+		// @include rounded(36px);
+		&:hover, &:active, &.hover {
+				background-color: $blue;
+				color: $white;
+		}
+	}
+	
+	//Button With Icon
+	&.btn-icon-left i {
+			margin-right: 11px;
+			font-size: 14px;
+	}
+	&.btn-icon-right i {
+			margin-left: 11px;
+			font-size: 14px;
+	}
+	//Button size variations 
+	&.btn-sm {
+			font-size: 12px;
+			line-height: 32px;
+			padding: 0 12px;
+	}
+	&.btn-lg {
+			padding: 10px 16px;
+	}
+	&.btn-block , &.btn-full {
+			display: block;
+			margin:auto 0px;
+			&.btn-sm {
+					font-size: 13px;
+					padding: 7px;
+			}
+	}
+	// Flat buttons 
+	&.btn-flat {
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			box-shadow: none;
+			border-width: 1px;
+	}
+	// Active state 
+	&:active {
+			-webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+			-moz-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+			box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+	}
+	&:focus {
+			outline: none;
+	}
+	// input file btn 
+	&.btn-file {
+			position: relative;
+			width: 120px;
+			height: 35px;
+			overflow: hidden;
+			> input[type='file'] {
+					display: block !important;
+					width: 100% !important;
+					height: 35px !important;
+					opacity: 0 !important;
+					position: absolute;
+					top: -10px;
+					cursor: pointer;
+			}
+	}
+}
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+	width: 100%;
+}
+
+.btn.btn-danger {
+	background-color: #DB0A07;
+}

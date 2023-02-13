@@ -1,0 +1,40 @@
+.screen_content {
+    .screen_content_wrap {
+        &.mobile_download_screen {
+            .mobile_screen {
+                .mobile_screen_wrap {
+                    background-color: $blue !important;
+                    .stori_frame_box {
+                        .stori_frame_box_wrap {
+                            .frame_image {
+                                img {
+                                    height: 260px;
+                                }
+                            }
+                            .heading {
+                                color: $white;
+                                h4 {
+                                    color: $white;
+                                }
+                                p {
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    margin-top: 6px;
+                                }
+                            }
+                        }
+                    }
+                    .stori_share_wrap {
+                        margin-top: 16px;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        .icon {
+                            width:50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

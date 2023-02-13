@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.stori_frame_slider > div > button {
+  display:none;
+}
+
+.decision-btns{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+.decision-btns .final {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: 0.3s;
+  background-color: #48a0f5 !important;
+}
+
+.decision-btns .final:hover{
+  transition: 0.3s;
+  scale: 1.02;
+}
+
+.decision-btns .rouded-jumbo-btn img{
+  height: 30px;
+  width: 30px;
+  color: white;
+
+}
+
+.snap-btn{
+  display: block;
+}
+
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.nav-btns{
+  cursor: pointer;
+  width: 30px !important;
+  height: 20px !important;
+}
+.header img{
+  width: 100% !important;
+}

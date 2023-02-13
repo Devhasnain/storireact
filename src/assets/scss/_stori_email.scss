@@ -1,0 +1,54 @@
+.screen_content {
+    .screen_content_wrap {
+        &.mobile_download_screen {
+            .mobile_screen {
+                .mobile_screen_wrap {
+                    .mobile_screen_logo {
+                        img {
+                            width: 30%;
+                            margin-bottom: 24px;
+                        }
+                    }
+                }
+            }
+        }
+        .mobile_screen {
+            .mobile_screen_email {
+                width: 100%;
+                .heading {
+                    color: $heading_color !important;
+                    margin-bottom: 0;
+                    h4 {
+                        margin-top: 16px;
+                        color: $heading_color;
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        margin-bottom: 0;
+                    }
+                }
+                .form-group {
+                    input:not([type="checkbox"]) {
+                        background-color: #F7F7F7;
+                        padding: 8px 14px;
+                        height: 36px;
+                        font-size: 16px;
+                        line-height: 32px;
+                        border: 2px solid #E4E4E4;
+                        border-radius: 8px;
+                        color: #99A3AC;
+                        width: 90%;
+                        &:focus {
+                            outline-color: $blue;
+                        }
+                    }
+                }
+                .rouded-jumbo-btn {
+                    line-height:95px;
+                    margin-top: 24px;
+                    width: 80px !important;
+                }
+            }
+        }
+    }
+}

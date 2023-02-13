@@ -1,0 +1,65 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-mont: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #48a0f5;
+$white: #ffffff;
+$black: #000000;
+$grey: #c4ccd3;
+$light_gey: #eee;
+$heading_color: #222222;
+
+$ratioWidthAndHeight: 400px;
+$ratioOuterElement: 400px;
+
+
+// Transition
+@mixin transition($data) {
+    -webkit-transition: $data;
+    -moz-transition: $data;
+    -o-transition: $data;
+    transition: $data;
+}
+
+@mixin rounded($amount) {
+    -moz-border-radius: $amount;
+    -webkit-border-radius: $amount;
+    border-radius: $amount;
+}
+
+@mixin flex() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin align-item($data) {
+    -webkit-box-align: $data;
+    -moz-box-align: $data;
+    -ms-flex-align: $data;
+    -webkit-align-items: $data;
+    align-items: $data;
+}
+
+@mixin opacity($data) {
+    opacity: $data;
+}
+@mixin transform ($data) {
+    -ms-transform: $data;
+    -moz-transform: $data;
+    -webkit-transform: $data;
+    transform: $data;
+
+    // @include transform('translateX(-50%) translateY(-50%)');
+}
+
+#mergeCanvas {
+    max-width:100%;
+}
